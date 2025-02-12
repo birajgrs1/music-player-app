@@ -1,11 +1,24 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./components/Layout";
 
 function App() {
-
   return (
     <>
-    <h2 className="bg-red-300 text-[white] font-bold text-center"> This is my app.</h2>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <Home />
+              </Layout>
+            }
+          />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
