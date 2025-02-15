@@ -12,11 +12,11 @@ export default {
         thirdColor: "#fff7e0",
         forthColor: "#bac4c8",
         fifthColor: "#737e82"
+      } ,
+      screens: {
+        sm: { max: "639px" },
+        md: "800px",
       },
-      screens:{
-        sm:{max:"640px"},
-        md:"800px"
-      }
     },
   },
   plugins: [],
